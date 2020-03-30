@@ -1,0 +1,22 @@
+{
+  "name": "cruise-ships",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/aveiszhab/cruise-ships.git"
+  },
+  "author": "aveiszhab",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aveiszhab/cruise-ships/issues"
+  },
+  "homepage": "https://github.com/aveiszhab/cruise-ships#readme",
+  "devDependencies": {
+    "jest": "^25.2.4"
+  }
+}

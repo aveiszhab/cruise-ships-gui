@@ -18,3 +18,10 @@ describe('constructor function', () => {
         expect(ship.startingPort).toBe('Dover');;
       });
 });
+
+describe('Sailing', () => {
+  it('it can set sail',() => {
+    ship.setSail();
+    expect(ship.startingPort).toBeFalsy;
+  });
+});

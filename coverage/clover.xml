@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1586118558753" clover="3.2.0">
+  <project timestamp="1586118558754" name="All files">
+    <metrics statements="18" coveredstatements="18" conditionals="2" coveredconditionals="2" methods="5" coveredmethods="5" elements="25" coveredelements="25" complexity="0" loc="18" ncloc="18" packages="1" files="3" classes="3"/>
+    <file name="itinerary.js" path="/home/aniko/Projects/MrCodes/cruise-ships/src/itinerary.js">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <line num="2" count="7" type="stmt"/>
+      <line num="5" count="2" type="stmt"/>
+    </file>
+    <file name="port.js" path="/home/aniko/Projects/MrCodes/cruise-ships/src/port.js">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <line num="2" count="15" type="stmt"/>
+      <line num="9" count="3" type="stmt"/>
+    </file>
+    <file name="ship.js" path="/home/aniko/Projects/MrCodes/cruise-ships/src/ship.js">
+      <metrics statements="14" coveredstatements="14" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>
+      <line num="2" count="5" type="stmt"/>
+      <line num="3" count="5" type="stmt"/>
+      <line num="4" count="5" type="stmt"/>
+      <line num="7" count="1" type="stmt"/>
+      <line num="9" count="4" type="stmt"/>
+      <line num="10" count="4" type="stmt"/>
+      <line num="12" count="4" type="cond" truecount="2" falsecount="0"/>
+      <line num="13" count="1" type="stmt"/>
+      <line num="16" count="3" type="stmt"/>
+      <line num="17" count="3" type="stmt"/>
+      <line num="22" count="2" type="stmt"/>
+      <line num="23" count="2" type="stmt"/>
+      <line num="25" count="2" type="stmt"/>
+      <line num="32" count="1" type="stmt"/>
+    </file>
+  </project>
+</coverage>

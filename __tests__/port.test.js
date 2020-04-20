@@ -1,42 +1,34 @@
-const Port = require('../src/port.js');
+const Port = require('../src/port');
 
-let port;
-let ship;
+
+let dover;
+let titanic;
+let queenMary;
 
 beforeEach(() => {
- 
-port = new Port('Dover');
-ship = {};
-
+    port = new Port('Dover');
+    const titanic = {};
+    const queenMary = {};
 });
 
-
-describe('Port constructor function', () => {
-    it('returns an object', () => {
+describe('Port', () => {
+    it('can be instantiated', () => {
         expect(new Port()).toBeInstanceOf(Object);
     });
-    it('Port has a name', () => {
-        expect(port.name).toBe('Dover');
+    it('has a name', () => {
+       expect(port.name).toBe('Dover');
     });
-});
+    it('can add a ship', () => {
+        port.addShip(titanic);
 
-describe('Add ship', () => {
-    it('add a ship when a ship docks',() => {
-        
-        port.addShip(ship)
-        expect(port.ships).toContain(ship);
+        expect(port.ships).toContain(titanic);
     });
-});
-describe('Add ship', () => {
-    it('remove a ship when leaves the port',() => {
-        const titanic = {};
-        const queenMary = {};
-        
+    it('can remove a ship',() => {
         port.addShip(titanic);
         port.addShip(queenMary);
         port.removeShip(queenMary);
-        
-        
+
         expect(port.ships).toEqual([titanic]);
+
     });
 });

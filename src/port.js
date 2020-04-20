@@ -4,15 +4,14 @@ function Port(name) {
 }
 
 Port.prototype = {
-    addShip: function (ship) {
+    
+    addShip(ship) {
         this.ships.push(ship);
     },
-    removeShip: function (ship){
-        this.ships.splice(this.ships.indexOf(ship), 1);
-    },
+
+    removeShip(ship){
+        this.ships.splice(this.ships.indexOf(ship),1);
+    }
 }
-
-
-
 
 module.exports = Port;

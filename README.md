@@ -65,7 +65,13 @@ nameOfTheShip.dock();
 
 ## Try it out
 
-Copy the below code into your node REPL:
+### Graphical User Interface
+
+Open your index.html file in a browser and start playing
+
+![Screenshot](./Screenshot.png)   
+
+### Copy the below code into your node REPL:
 
 const Ship = require('./src/ship.js');  
 const Port = require('./src/port.js');  

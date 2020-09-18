@@ -67,63 +67,64 @@ nameOfTheShip.dock();
 
 Copy the below code into your node REPL:
 
-const Ship = require('./src/ship.js');
-const Port = require('./src/port.js');
+const Ship = require('./src/ship.js');  
+const Port = require('./src/port.js');  
 const Itinerary = require('./src/itinerary.js');
 
-const dover = new Port('Dover');
-const calais = new Port('Calais');
-const liverpool = new Port('Liverpool');
-const itineraryTitanic = new Itinerary([dover, calais, liverpool]);
-const itineraryQueenMary = new Itinerary([liverpool, calais]);
-const titanic = new Ship(itineraryTitanic);
-const queenMary = new Ship(itineraryQueenMary);
+const dover = new Port('Dover');  
+const calais = new Port('Calais');  
+const liverpool = new Port('Liverpool');  
+const itineraryTitanic = new Itinerary([dover, calais, liverpool]);  
+const itineraryQueenMary = new Itinerary([liverpool, calais]);  
+const titanic = new Ship(itineraryTitanic);  
+const queenMary = new Ship(itineraryQueenMary);  
 
-const listPorts = ports => {
-  return ports.map(port => port.name);
+
+const listPorts = ports => {  
+  return ports.map(port => port.name);  
 };
 
-console.log('***ITINERARIES***');
-console.log(`Titanc's itinerary: ${listPorts(itineraryTitanic.ports)}`);
-console.log(`QueenMary's Itinerary: ${listPorts(itineraryQueenMary.ports)}`);
+console.log('***ITINERARIES***');  
+console.log(`Titanc's itinerary: ${listPorts(itineraryTitanic.ports)}`);  
+console.log(`QueenMary's Itinerary: ${listPorts(itineraryQueenMary.ports)}`);  
 
-console.log('***PORTS STATUS BEFORE START***');
-console.log(`Number of ships docking in ${liverpool.name}: ${liverpool.ships.length}`);
-console.log(`Number of ships docking in ${dover.name}: ${dover.ships.length}`);
-console.log(`Number of ships docking in ${calais.name}: ${calais.ships.length}`);
+console.log('***PORTS STATUS BEFORE START***');  
+console.log(`Number of ships docking in ${liverpool.name}: ${liverpool.ships.length}`);  
+console.log(`Number of ships docking in ${dover.name}: ${dover.ships.length}`);  
+console.log(`Number of ships docking in ${calais.name}: ${calais.ships.length}`);  
 
 
-titanic.setSail();
-console.log('***TITANIC SETS SAIL***');
-console.log(`Titanic's previous port is: ${titanic.previousPort.name}`);
-console.log(`Titanic's current port is: ${titanic.currentPort}`);
-console.log(`Number of ships docking in ${liverpool.name}: ${liverpool.ships.length}`);
-console.log(`Number of ships docking in ${dover.name}: ${dover.ships.length}`);
-console.log(`Number of ships docking in ${calais.name}: ${calais.ships.length}`);
+titanic.setSail();  
+console.log('***TITANIC SETS SAIL***');  
+console.log(`Titanic's previous port is: ${titanic.previousPort.name}`); 
+console.log(`Titanic's current port is: ${titanic.currentPort}`);  
+console.log(`Number of ships docking in ${liverpool.name}: ${liverpool.ships.length}`);  
+console.log(`Number of ships docking in ${dover.name}: ${dover.ships.length}`);  
+console.log(`Number of ships docking in ${calais.name}: ${calais.ships.length}`);  
 
-queenMary.setSail();
-console.log('***QUEENMARY SETS SAIL***');
-console.log(`QueenMary's previous port is: ${queenMary.previousPort.name}`);
-console.log(`QueenMary's current port is: ${queenMary.currentPort}`);
-console.log(`Number of ships docking in ${liverpool.name}: ${liverpool.ships.length}`);
-console.log(`Number of ships docking in ${dover.name}: ${dover.ships.length}`);
-console.log(`Number of ships docking in ${calais.name}: ${calais.ships.length}`);
+queenMary.setSail();  
+console.log('***QUEENMARY SETS SAIL***');  
+console.log(`QueenMary's previous port is: ${queenMary.previousPort.name}`);  
+console.log(`QueenMary's current port is: ${queenMary.currentPort}`);  
+console.log(`Number of ships docking in ${liverpool.name}: ${liverpool.ships.  length}`);  
+console.log(`Number of ships docking in ${dover.name}: ${dover.ships.length}`);  
+console.log(`Number of ships docking in ${calais.name}: ${calais.ships.length}`);  
 
-titanic.dock();
-console.log('***TITANIC DOCKS***');
-console.log(`Titanic's previous port is: ${titanic.previousPort.name}`);
-console.log(`Titanic's current port is: ${titanic.currentPort.name}`);
-console.log(`Number of ships docking in ${liverpool.name}: ${liverpool.ships.length}`);
-console.log(`Number of ships docking in ${dover.name}: ${dover.ships.length}`);
-console.log(`Number of ships docking in ${calais.name}: ${calais.ships.length}`);
+titanic.dock();  
+console.log('***TITANIC DOCKS***');  
+console.log(`Titanic's previous port is: ${titanic.previousPort.name}`);  
+console.log(`Titanic's current port is: ${titanic.currentPort.name}`);  
+console.log(`Number of ships docking in ${liverpool.name}: ${liverpool.ships.length}`);  
+console.log(`Number of ships docking in ${dover.name}: ${dover.ships.length}`);  
+console.log(`Number of ships docking in ${calais.name}: ${calais.ships.length}`);  
 
-queenMary.dock();
-console.log('***QUEENMARY DOCKS***');
-console.log(`QueenMary's previous port is: ${queenMary.previousPort.name}`);
-console.log(`QueenMary's current port is: ${queenMary.currentPort.name}`);
-console.log(`Number of ships docking in ${liverpool.name}: ${liverpool.ships.length}`);
-console.log(`Number of ships docking in ${dover.name}: ${dover.ships.length}`);
-console.log(`Number of ships docking in ${calais.name}: ${calais.ships.length}`);
+queenMary.dock();  
+console.log('***QUEENMARY DOCKS***');  
+console.log(`QueenMary's previous port is: ${queenMary.previousPort.name}`);  
+console.log(`QueenMary's current port is: ${queenMary.currentPort.name}`);  
+console.log(`Number of ships docking in ${liverpool.name}: ${liverpool.ships.length}`);  
+console.log(`Number of ships docking in ${dover.name}: ${dover.ships.length}`);  
+console.log(`Number of ships docking in ${calais.name}: ${calais.ships.length}`);  
 
 
 

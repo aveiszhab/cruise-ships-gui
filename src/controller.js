@@ -46,6 +46,7 @@
     },
 
 
+    // eslint-disable-next-line consistent-return
     setSail() {
       const ship = this.ship;
       const currentPortIndex = ship.itinerary.ports.indexOf(ship.currentPort);
